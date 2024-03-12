@@ -113,10 +113,10 @@ def process_video(yolo_coco_model_path, yolo_license_plate_model_path, video_pat
             print("Empty frame encountered. Skipping...")
     
     print("Processing complete.")
-    write_csv(results, "D:/Ai_Camera/ProjectX/number_plate/test.csv")
+    write_csv(results, "./test.csv")
 
-yolo_coco_model_path = "D:/Ai_Camera/ProjectX/number_plate/yolov8n.pt"
-yolo_license_plate_model_path = "D:/Ai_Camera/ProjectX/number_plate/indian_license_plate_detector.pt"
-video_path = "D:/Ai_Camera/ProjectX/number_plate/test_bike_2.mp4"
+yolo_coco_model_path = "./yolov8n.pt"
+yolo_license_plate_model_path = "./indian_license_plate_detector.pt"
+video_path = "./indian_roadsample.mp4"
 density_threshold = 20
 process_video(yolo_coco_model_path, yolo_license_plate_model_path, video_path, density_threshold)
