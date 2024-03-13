@@ -18,5 +18,6 @@ jobs:
       - name: Train model
         run: |
           # Your ML workflow goes here
+          pip install numpy
           pip install -r requirements.txt
           python ./LicensePlateRecognition/main_2_indian_num_plate.py  # generate plot.png
